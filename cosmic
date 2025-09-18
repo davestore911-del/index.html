@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Alignment - Complete Spiritual Guidance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        :root {
+            --primary: #4a154b;
+            --secondary: #9f7aea;
+            --accent: #f6ad55;
+            --dark: #2d3748;
+            --light: #f8fafc;
+            --space: #0f172a;
+            --purple-light: #d6bcfa;
+            --blue-mystic: #6b46c1;
+            --green-healing: #48bb78;
+            --red-passion: #e53e3e;
+            --gold-wealth: #d69e2e;
+            --pink-love: #ed64a6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--space) 0%, var(--primary) 100%);
+            color: var(--light);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--secondary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="40" cy="20" r="0.5" fill="white" opacity="0.5"/><circle cx="60" cy="70" r="0.7" fill="white" opacity="0.3"/><circle cx="20" cy="50" r="1" fill="white" opacity="0.7"/><circle cx="80" cy="30" r="0.8" fill="white" opacity="0.4"/><circle cx="30" cy="80" r="0.9" fill="white" opacity="0.6"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)" /></svg>');
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--accent), var(--purple-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tagline {
+            font-style: italic;
+            color: var(--purple-light);
+            margin-bottom: 20px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+        
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .input-section {
+            background: rgba(107, 70, 193, 0.2);
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 20px;
+            align-self: start;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--accent);
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 12px;
+            border: 2px solid var(--secondary);
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--light);
+            font-size: 16px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to right, var(--secondary), var(--blue-mystic));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px极地14px rgba(159, 122, 234, 0.4);
+        }
+        
+        .save-btn {
+            background: linear-gradient(to right, var(--green-healing), var(--blue-mystic));
+            margin-top: 20px;
+        }
+        
+        .results-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .result-card {
+            background: rgba(45, 55, 72, 0.6);
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+            border: 1px极地 solid rgba(159, 122, 234, 极地0.3);
+        }
+        
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+        }
+        
+        .card-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: var(--accent);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+        
+        .card-title i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        
+        .card-content {
+            min-height: 180px;
+        }
+        
+        .placeholder {
+            color: var(--purple-light);
+            font-style: italic;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1极地fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            background: rgba(107, 70, 193, 0.2);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: scale(1.05);
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--purple-light);
+            font-size: 0.9rem;
+        }
+        
+        .sigil {
+            font-family: 'Times New Roman', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin: 15px 0;
+            color: var(--accent);
+        }
+        
+        .frequency {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+极地        }
+        
+        .frequency-bar {
+            height: 20px;
+            background: linear-gradient(to right, var(--secondary), var(--accent));
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        
+        .birthstone {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .stone-color {
+            width: 30px;
+            height: 30极地px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 2px solid white;
+        }
+        
+        .tarot-card {
+            perspective: 1000px;
+            width: 120px;
+            height: 200px;
+            margin: 15px auto;
+        }
+        
+        .tarot-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .tarot-card:hover .tarot-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .tarot-front, .tarot-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .tarot-front {
+            background: linear-gradient(45deg, var(--primary), var(--blue-mystic));
+        }
+        
+        .tarot-back {
+            background: linear-gradient(45deg, var(--accent), var(--secondary));
+            transform: rotateY(180deg);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .planet-position {
+            margin: 8px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .planet-bar {
+            height: 8px;
+            background: var(--secondary);
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        
+        .insight-list {
+            list-style-type: none;
+            margin: 15px 0;
+        }
+        
+        .insight-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .insight-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        .energy-bar {
+            height: 10px;
+            background: linear-gradient(to right, var(--green-healing), var(--gold-wealth));
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        .section-title {
+            margin: 25px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            color:极地 var(--accent);
+        }
+        
+        .ritual-box {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+        
+极地        .guide-team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15极地px;
+            margin: 15px 0;
+        }
+        
+        .guide {
+            background: rgba(159, 122, 234, 0.2);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .lucky-dates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .date-box {
+            background: rgba(246, 173, 85, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .psalm-box {
+            background: rgba(72, 187, 120, 0.2);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        
+        .element-display {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .element-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        .soul-name {
+            font-size: 2rem;
+            text-align: center;
+            margin: 15px 0;
+            color: var(--accent);
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        .soulmate-box {
+            background: rgba(237, 100, 166, 0.2);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+        
+        .invocation {
+            text-align: center;
+            padding: 15px;
+            background: rgba(107, 70, 193, 0.3);
+            border-radius: 12px;
+            margin: 15px 极地0;
+            font-style: italic;
+        }
+        
+        .color-swatch {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 5px;
+            vertical-align: middle;
+            border: 1px solid white;
+        }
+        
+        .tab-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: rgba极地(107, 70, 193, 0.3);
+            border-radius: 8px;
+极地            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .tab.active {
+            background: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .save-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        /* PDF specific styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .result-card {
+                background: white;
+                color: black;
+                border: 1px solid #ddd;
+            }
+            
+            .input-section, .feature-grid, footer, button {
+                display: none;
+            }
+        }
+        
+        /* Loading animation */
+        .loader {
+            display: none;
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 5px solid var(--secondary);
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Notification */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            background: var(--green-healing);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="notification" id="notification">Your report has been generated successfully!</div>
+    
+    <div class="container">
+        <header>
+            <h1>Cosmic Alignment</h1>
+            <p class="tagline">Complete Spiritual Guidance for Life, Wealth, Health and Relationships</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="input-section">
+                <h2>Enter Your Birth Details</h2>
+                <div class="input-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate">
+                </div>
+                
+                <div class="input-group">
+                    <label极地 for="birthtime">Time of Birth</label>
+                    <input type="time" id="birthtime">
+                </div>
+                
+                <div class="input-group">
+                    <label for="birthplace">Place of Birth</label>
+                    <input type="text" id="birthplace" placeholder="City, Country">
+                </div>
+                
+                <div class="input-group">
+                    <label for="name">Full Name at Birth</label>
+                    <input type="text" id="name" placeholder="Your complete birth name">
+                </div>
+                
+                <button id="generate-btn">Reveal My Cosmic Blueprint</button>
+                <button id="save-btn" class="save-btn">Save as PDF</button>
+            </div>
+            
+            <div class="results-section">
+                <div class="loader" id="loader"></div>
+                
+                <div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-star"></i>
+                        <h3>Life Purpose & Mission</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Your soul's mission and life purpose will be revealed</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class极地="card-title">
+                        <i class="fas fa-signature"></i>
+                        <h3>Soul Name & Numerology</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Your soul name and numerological insights</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-heart"></i>
+                        <h3>Soulmate Connection</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Insights about your soulmate and relationships</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-gem"></极地i>
+                        <h3>Birthstones & Lucky Elements</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Your birthstones and lucky colors/numbers</p>
+                    </div>
+                </div>
+                
+                <极地div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-music"></i>
+                        <h3>Healing Frequencies</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Personalized healing frequencies for alignment</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-cards"></i>
+                        <h3>Tarot Reading</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Personalized tarot guidance</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-draw-polygon"></i>
+                        <h3>Soul Sigil & Invocation</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Your unique soul sigil and invocation ritual</极地p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-brain"></i>
+                        <h3>Channeled Messages</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Messages from your spirit guides</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="card-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Important Dates</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="placeholder">Significant dates for action and opportunity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="save-container">
+            <button id="save-main-btn" class="save-btn">Save Full Report as PDF</button>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="fas fa-signature"></i>
+                <h3>Soul Name Revelation</h3>
+                <p>Discover your true soul name and its spiritual significance</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-heart"></i>
+                <h3>Soulmate Insights</极地h3>
+                <p>Learn about your soulmate connection and relationship destiny</p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-calculator"></i>
+                <h3>Numerology Analysis</h3>
+                <p>Reveal your life path, expression, and soul urge numbers</极地p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-draw-polygon"></i>
+                <h3>Soul Sigil</h3>
+                <p>Receive a unique sigil to connect with your soul essence</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Cosmic Alignment &copy; 2023 | Complete Spiritual Guidance Platform</p>
+            <p>This application provides mystical insights for spiritual exploration and personal growth.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const generateBtn = document.getElementById('generate-btn');
+            const saveBtn = document.getElementById('save-btn');
+            const saveMainBtn = document.getElementById('save-main-btn');
+            const loader = document.getElementById('loader');
+            const notification = document.getElementById('notification');
+            
+            generateBtn.addEventListener('click', function() {
+                // Get input values
+                const birthdate = document.getElementById('birthdate').value;
+                const birthtime = document.getElementById('birthtime').value;
+                const birthplace = document.getElementById('birthplace').value;
+                const name = document.getElementById('name').value;
+                
+                // Validate inputs
+                if (!birthdate || !birthtime || !birthplace || !name) {
+                    showNotification('Please fill in all fields to generate your cosmic insights.', 'error');
+                    return;
+                }
+                
+                // Show loading animation
+                loader.style.display = 'block';
+                
+                // Simulate processing time
+                setTimeout(() => {
+                    // Generate all mystical insights
+                    generateLifePurpose(name, birthdate);
+                    generateSoulNameNumerology(name, birthdate);
+                    generateSoulmateInfo(birthdate);
+                    generateBirthstonesLuck(birthdate);
+                    generateHealingFrequencies(birthdate);
+                    generateTarotReading(birthdate);
+                    generateSoulSigilInvocation(name, birthdate);
+                    generateChanneledMessages(birthdate);
+                    generateImportantDates(birthdate);
+                    
+                    // Hide loader and show notification
+                    loader.style.display = 'none';
+                    showNotification('Your cosmic insights have been generated successfully!');
+                }, 1500);
+            });
+            
+            // Show notification function
+            function showNotification(message, type = 'success') {
+                notification.textContent = message;
+                notification.style.background = type === 'success' ? 'var(--green-healing)' : 'var(--red-passion)';
+                notification.classList.add('show');
+                
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            }
+            
+            // PDF generation function
+            function generatePDF() {
+                const birthdate = document.getElementById('birthdate').value;
+                const name = document.getElementById('name').value;
+                
+                if (!birthdate || !name) {
+                    showNotification('Please generate your insights first before saving as PDF.', 'error');
+                    return;
+                }
+                
+                // Create a custom filename with the user's name and date
+                const fileName = `Cosmic_Alignment_${name.replace(/\s+/g, '_')}_${birthdate}.pdf`;
+                
+                // Get the element to print
+                const element = document.querySelector('.results-section');
+                
+                // Configuration for html2pdf
+                const opt = {
+                    margin: 10,
+                    filename: fileName,
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                };
+                
+                // Generate and download PDF
+                html2pdf().set(opt).from(element).save();
+                
+                showNotification('Your PDF is being prepared for download...');
+            }
+            
+            // Add event listeners to save buttons
+            saveBtn.addEventListener('click', generatePDF);
+            saveMainBtn.addEventListener('click', generatePDF);
+            
+            function generateLifePurpose(name, date) {
+                const purposes = [
+                    'Healer and light-bringer to those in emotional pain',
+                    'Teacher of spiritual wisdom through creative expression',
+                    'Bridge between ancient wisdom and modern technology',
+                    'Catalyst for transformation in social structures',
+                    'Guardian of earth energies and natural harmony'
+                ];
+                
+                const missions = [
+                    'Your soul mission is极地 to help others find their spiritual path through your innovative ideas.',
+                    'You are here to create systems that bring more beauty and harmony into the world.',
+                    'Your purpose involves healing ancestral patterns and breaking cycles of limitation.',
+                    'You are a wayshower for the new earth consciousness, demonstrating balanced living.',
+                    'Your mission is to bring people together through art, music or community building.'
+                ];
+                
+                const purpose = purposes[Math.floor(Math.random() * purposes.length)];
+                const mission = missions[Math.floor(Math.random() * missions.length)];
+                
+                const content = `
+                    <h4>Your Soul's Purpose</h4>
+                    <p>${purpose}</p>
+                    
+                    <h4>Life Mission</h4>
+                    <极地p>${mission}</p>
+                    
+                    <h4>Primary Expression</h4>
+                    <p>You fulfill your purpose through ${['healing work', 'creative expression', 'teaching', 'leadership', 'innovation'][Math.floor(Math.random() * 5)]}.</p>
+                    
+                    <div class="energy-bar" style="width: ${70 + Math.random() * 30}%"></div>
+                    <p class="highlight">Your current alignment with purpose: ${Math.floor(70 + Math.random() * 30)}%</p>
+                    
+                    <h4>How to Fulfill Your Purpose</h4>
+                    <ul class="insight-list">
+                        <li>Practice daily meditation to connect with your inner guidance</li>
+                        <li>Develop your natural talents in ${['healing arts', 'creative expression', 'teaching', 'leadership', 'innovation'][Math.floor(Math.random() * 5)]}</li>
+                        <li>Seek out communities that align with your values</li>
+                        <li>Trust the synchronicities that guide your path极地</li>
+                    </ul>
+                `;
+                
+                document.querySelectorAll('.result-card')[0].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateSoulNameNumerology(name, date) {
+                const soulNames = ['Aurora', 'Lumina', 'Solstice', 'Zenith', 'Nova', 'Celestia', 'Seraphina', 'Astralis'];
+                const soulName = soulNames[Math.floor(Math.random() * soulNames.length)];
+                
+                // Simple life path number calculation
+                const cleanDate = date.replace(/-/g, '');
+                let total = 0;
+                
+                for (let i = 0; i < cleanDate.length; i++) {
+                    total += parseInt(cleanDate[i]);
+                }
+                
+                while (total > 9 && total !== 11 && total !== 22 && total !== 33) {
+                    total = Math.floor(total / 10) + (total % 10);
+                }
+                
+                const lifePath = total;
+                
+                const meanings = {
+                    1: 'The Leader - independent, ambitious, and innovative',
+                    2: 'The Diplomat - cooperative, intuitive, and supportive',
+                    3: 'The Communicator - creative, expressive, and social',
+                    4: 'The Builder - practical, organized, and dependable',
+                    5: 'The Freedom Seeker - adventurous, adaptable, and curious',
+                    6: 'The Nurturer - responsible, caring, and compassionate',
+                    7: 'The Seeker - analytical, spiritual, and introspective',
+                    8: 'The Powerhouse - ambitious, successful, and material',
+                    9: 'The Humanitarian - compassionate, generous, and idealistic',
+                    11: 'The Intuitive - spiritual, inspirational, and intuitive',
+                    22: 'The Master Builder - practical, powerful, and capable',
+                    33: 'The Master Teacher - compassionate, healing, and influential'
+                };
+                
+                const content = `
+                    <h4>Your Soul Name</h4>
+                    <div class="soul-name">${soulName}</div>
+                    <p>This name resonates with your soul's vibration and true essence.</p>
+                    
+                    <h4>Numerology Profile</h4>
+                    <p><strong>Life Path Number:</strong> ${lifePath} - ${meanings[lifePath]}</p>
+                    <p><strong>Expression Number:</strong> ${1 + Math.floor(Math.random() * 8)} - How you express yourself to the world</p>
+                    <p><strong>Soul Urge Number:</strong> ${1 + Math.floor(Math.random() * 8)} - Your inner desires and motivations</p>
+                    
+                    <h4>Personal Year Number极地</h4>
+                    <p>${Math.floor(Math.random() * 9) + 1} - ${['Foundation', 'Partnership', 'Creativity', 'Stability', 'Change', 'Harmony', 'Spirituality', 'Abundance', 'Completion'][Math.floor(Math.random() * 9)]} cycle</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[1].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateSoulmateInfo(date) {
+                const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', '极地Pisces'];
+                const soulmate极地Sign = signs[Math.floor(Math.random() * signs.length)];
+                
+                const meetingPlaces = ['through friends', 'at a spiritual retreat', 'while traveling', 'at work', 'online', 'in nature'];
+                const meetingPlace = meetingPlaces[Math.floor(Math.random() * meetingPlaces.length)];
+                
+                const content = `
+                    <h4>Your Soulmate Connection</h4>
+                    <div class="soulmate-box">
+                        <p>Your soulmate likely has strong ${soulmateSign} energy in their chart.</p>
+                        <p>You will recognize them by their ${['kind eyes', 'healing presence', 'infectious laughter', 'creative spirit', 'wise beyond years'][Math.floor(Math.random() * 5)]}.</p>
+                    </div>
+                    
+                    <h4>Meeting Circumstances</h4>
+                    <p>You are likely to meet ${meetingPlace} when ${['Jupiter', 'Venus', 'the Moon', 'Mercury'][Math.floor(Math.random() * 4)]} is in ${soulmateSign}.</p>
+                    
+                    <h4>Soul Connection Purpose</h4>
+                    <p>This relationship will help you with ${['emotional healing', 'spiritual growth', 'creative expression', 'healing ancestral patterns', 'fulfilling your life mission'][Math.floor(Math.random() * 5)]}.</p>
+                    
+                    <h4>Timeline</h4>
+                    <p>Significant relationship developments around: ${['next full moon', 'the coming equinox', 'your solar return', 'when Venus enters Libra'][Math.floor(Math.random() * 4)]}</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[2].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateBirthstonesLuck(date) {
+                const month = parseInt(date.split('-')[1]);
+                const stones = [
+                    {name: 'Garnet', color: '#9A2A2A'},
+                    {name: 'Amethyst', color: '#9966CC'},
+                    {name: 'Aquamarine', color: '#7FFFD4'},
+                    {name极地: 'Diamond', color: '#FFFFFF'},
+                    {name: 'Emerald', color: '#50极地C878'},
+                    {name: 'Pearl', color: '#F8F6F0'},
+                    {name: 'Ruby', color: '#E0115F'},
+                    {name: 'Peridot', color: '#E6E200'},
+                    {name: 'Sapphire', color: '#0F52BA'},
+                    {name: 'Tourmaline', color: '#33CC99'},
+                    {name: 'Topaz', color: '#FFC87C'},
+                    {name: 'Tanzanite', color: '#BB66EE'}
+                ];
+                
+                const primaryStone = stones[month - 1];
+                const secondaryStone = stones[(month + 4) % 12];
+                
+                const colors = ['#FF6B6B', '#4ECDC4', '#45B7极地D1', '#FFBE0B', '#FB5607', '#8338EC', '#3A86FF'];
+                const luckyColors = [colors[month % 7], colors[(month + 3) % 7]];
+                
+                const luckyNumbers = [month, Math.floor(Math.random() * 20) + 1, Math.floor(Math.random() * 50) + 30];
+                
+                const content = `
+                    <h4>Your Birthstones</h4>
+                    <div class="birthstone">
+                        <div class="stone-color" style="background: ${primaryStone.color}"></div>
+                        <div>Primary: ${primaryStone.name} - ${['Protection', 'Wisdom', 'Courage', 'Love', 'Abundance', 'Healing', 'Intuition', 'Creativity', 'Manifestation', 'Peace', 'Transformation', 'Spiritual Connection'][month - 1]}</div>
+                    </div>
+                    <div class="birthstone">
+                        <div class="stone-color" style="background: ${secondaryStone.color}"></div>
+                        <div>Secondary: ${secondaryStone.name} - Enhances ${['dream work', 'intuition', 'communication', 'protection', 'manifestation'][Math.floor(Math.random() * 5)]}</极地div>
+                    </div>
+                    
+                    <h4>Lucky Colors</h4>
+                    <p>Your power colors: <span class="color-swatch" style="background: ${luckyColors[0]}"></span> ${luckyColors[0]} and <span class="color-swatch" style="background: ${luckyColors[1]}"></span> ${luckyColors[1]}</p>
+                    <p>Incorporate these into your wardrobe and environment for alignment.</p>
+                    
+                    <h4>Lucky Numbers</h4>
+                    <p>Your fortunate numbers: ${luckyNumbers.join(', ')}</p>
+                    <p>These numbers may appear in significant ways throughout your life.</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[3].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateHealingFrequencies(date) {
+                const frequencies = [
+                    {name: 'Solfeggio Frequency', value: 528, description: 'Transformation and Miracles'},
+                    {name: 'Planetary Frequency', value: 136.1, description: 'Earth Resonance'},
+                    {name: 'Chakra Alignment', value极地: 432, description: 'Heart Chakra Activation'},
+                    {name: 'Soul Resonance', value: 963, description: 'Connection to Higher Self'}
+                ];
+                
+                let content = '<h极地4>Your Healing Frequencies</h4>';
+                
+                frequencies.forEach(freq => {
+                    content += `
+                        <div class="frequency">
+                            <div class="frequency-bar" style="width: ${20 + Math.random() * 70}%"></div>
+                            <div>
+                                <strong>${freq.name}</strong>: ${freq.value} Hz<br>
+                                <small>${freq.description}</small>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                content += `
+                    <h4>How to Use These Frequencies</h4>
+                    <p>Listen to these frequencies during meditation or while sleeping. You can find audio tracks online by searching for "Solfeggio frequencies" or "healing tones".</p>
+                    
+                    <h4>Optimal Listening Times</h4>
+                    <p>Best results when listened to during ${['the waxing moon', 'early morning', 'sunset', 'before bed'][Math.floor(Math.random() * 4)]}.</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[4].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateTarotReading(date) {
+                const cards = [
+                    {name: 'The Fool', meaning: 'New beginnings, spontaneity'},
+                    {name: 'The Magician', meaning: 'Manifestation, power'},
+                    {name: 'The High Priestess', meaning: 'Intuition, subconscious'},
+                    {name: 'The Empress', meaning: 'Femininity, abundance'},
+                    {name: 'The Emperor', meaning: 'Authority, structure'},
+                    {name: 'The Hierophant', meaning: 'Tradition, spiritual guidance'},
+                    {name: 'The Lovers', meaning: 'Relationships, choices'},
+                    {name: 'The Chariot', meaning: 'Control, willpower'},
+                    {name: 'Strength', meaning: 'Courage, inner strength'},
+                    {name: 'The Hermit', meaning: 'Soul-searching, introspection'}
+                ];
+                
+                const past = cards[Math.floor(Math.random() * cards.length)];
+                const present = cards[Math.floor(Math.random() * cards.length)];
+                const future = cards[Math.floor(Math.random() * cards.length)];
+                
+                const content = `
+                    <h4>Past, Present, Future Reading</h4>
+                    <p>Your three-card spread reveals:</p>
+                    
+                    <div class="tarot-card">
+                        <div class="tarot-inner">
+                            <div class="tarot-front">
+                                Past
+                            </div>
+                            <div class="tarot-back">
+                                ${past.name}: ${past.meaning}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tarot-card">
+                        <div class="tarot-inner">
+                            <div class="tarot-front">
+                                Present
+                            </极地div>
+                            <div class="tarot-back">
+                                ${present.name}: ${present.meaning}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tarot-card">
+                        <div class极地="tarot-inner">
+                            <div class="tarot-front">
+                                Future
+                            </div>
+                            <div class="tarot-back">
+                                ${future.name}: ${future.meaning}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Overall Message</h4>
+                    <p>The cards indicate a time of ${['transformation', 'new opportunities', 'healing', 'spiritual growth', 'manifestation'][Math.floor(Math.random() * 5)]} is approaching.</p>
+                    
+                    <h4>Guidance</h4>
+                    <p>${['Trust your intuition', 'Take inspired action', 'Release old patterns', 'Open your heart', 'Speak your truth'][Math.floor(Math.random() * 5)]} in the coming weeks.</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[5].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateSoulSigilInvocation(name, date) {
+                const symbols = ['✡', '☯', '☸', '✶', '❋', '⬡', '⛦', '⚹', '♰', '⍟'];
+                let sigil = '';
+                
+                for (let i = 0; i < 7; i++) {
+                    sigil += symbols[Math.floor(Math.random() * symbols.length)];
+                }
+                
+                const content = `
+                    <h4>Your Soul Sigil</极地h4>
+                    <div class="sigil">${sigil}</div>
+                    <p>This sacred symbol represents your unique soul essence and vibration.</p>
+                    
+                    <h4>How to Use Your Sigil</h4>
+                    <ul class="insight-list">
+                        <li>Meditate upon it to connect with your higher self</li>
+                        <li>Draw it on paper and place under your pillow for guidance dreams</li>
+                        <li>Visualize it during meditation for protection and alignment</li>
+                        <li>Carry it with you as a talisman of your soul power</li>
+                    </ul>
+                    
+                    <h4>Soul Invocation Ritual</h4>
+                    <div class="invocation">
+                        <p>"I call upon my soul essence, my highest self,</p>
+                        <p>To guide me, protect me, and align me with my purpose.</极地p>
+                        <p>I am a being of light, love, and divine connection.</p>
+                        <p>I now step into my full power and potential."</p>
+                    </div>
+                    <p>Recite this invocation daily while visualizing your sigil.</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[6].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateChanneledMessages(date) {
+                const messages = [
+                    'Your spirit guides are encouraging you to trust the path unfolding before you. The challenges you have faced were necessary for your growth.',
+                    'The universe is aligning to bring you new opportunities for expansion. Stay open to receiving abundance in unexpected forms.',
+                    'Your ancestors are supporting you in breaking old patterns that no longer serve your highest good. Release what weighs you down.',
+                    'You are being called to step into a leadership role in your community. Your unique perspective is needed at this time.',
+                    'The celestial beings are reminding you to prioritize self-care and spiritual practice. Your energy is precious and needs protection.'
+                ];
+                
+                const message = messages[Math.floor(Math.random() * messages.length)];
+                
+                const content = `
+                    <h4>Message From Your Spirit Guides</h4>
+                    <div class="ritual-box">
+                        <p>${message}</p>
+                    </div>
+                    
+                    <h4>Guidance for the Coming Month</h4>
+                    <p>Focus on ${['meditation', 'creative expression', 'connecting with nature', 'rest and rejuvenation', 'building community'][Math.floor(Math.random() * 5)]}.</p>
+                    
+                    <h4>Energy Forecast</h4>
+                    <p>Your energy will be most potent during the ${极地['new moon', 'full moon', 'waxing moon', 'waning moon'][Math.floor(Math.random() * 4)]}.</p>
+                    
+                    <h4极地>Recommended Practice</h4>
+                    <p>${['Morning journaling', 'Evening meditation', 'Weekly energy cleansing', 'Daily gratitude practice', 'Moon rituals'][Math.floor(Math.random() * 5)]} will help you stay aligned.</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[7极地].querySelector('.card-content').innerHTML = content;
+            }
+            
+            function generateImportantDates(date) {
+                const currentYear = new Date().getFullYear();
+                const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                
+                let content = `
+                    <h4>Key Action Dates for ${currentYear}</h4>
+                    <p>These are the most favorable dates to take important actions:</p>
+                    
+                    <div class="lucky极地-dates">
+                        <div class="date-box">${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28) + 1}</div>
+                        <div class="date-box">${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28) + 1}</极地div>
+                        <div class="date-box">${months[Math.floor(Math.random() * 12)]极地} ${Math.floor(Math.random() * 28) + 1}</div>
+                        <div class="date-box">${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28) + 1}</div>
+                    </div>
+                    
+                    <h4>Financial Opportunities</h4>
+                    <p>Best dates for financial moves: ${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28) + 1} and ${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28)极地 + 1}</p>
+                    
+                    <h4>Relationship Moments</h4>
+                    <p>Significant relationship developments around: ${months[Math.floor(Math.random() * 12)]} ${极地Math.floor(Math.random() * 28) + 1}</p>
+                    
+                    <h4>Spiritual Activation</h4>
+                    <p>Powerful spiritual portal opens: ${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28) + 1}</p>
+                    
+                    <h4>Lottery & Game Days</h4>
+                    <p>Favorable days for trying your luck: ${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28) + 1}, ${months[Math.floor(Math.random() * 12)]} ${Math.floor(Math.random() * 28) + 1}</p>
+                `;
+                
+                document.querySelectorAll('.result-card')[8].querySelector('.card-content').innerHTML = content;
+            }
+        });
+    </script>
+</body>
+</html>
